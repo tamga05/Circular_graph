@@ -1,0 +1,28 @@
+.circular-graph {
+    width: 850px;
+    height: 500px;
+    border: 1px solid rgb(116, 115, 115);
+    margin: 0 auto;
+    margin-top: 200px;
+    padding: 15px 50px 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.svg__circle-graph {
+    position: relative;
+    stroke: rgb(192, 190, 190);
+    stroke-width: 30;
+
+}
+
+.svg__circle-white {
+    position: absolute;
+    stroke: transparent;
+    fill: white;
+}
+
+.svg__circle-white-text {
+
+}

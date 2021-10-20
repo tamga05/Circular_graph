@@ -320,4 +320,25 @@ template {
 [hidden] {
   display: none; }
 
+.circular-graph {
+  width: 850px;
+  height: 500px;
+  border: 1px solid #747373;
+  margin: 0 auto;
+  margin-top: 200px;
+  padding: 15px 50px 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.svg__circle-graph {
+  position: relative;
+  stroke: #c0bebe;
+  stroke-width: 30; }
+
+.svg__circle-white {
+  position: absolute;
+  stroke: transparent;
+  fill: white; }
+
 /*# sourceMappingURL=style.min.css.map */

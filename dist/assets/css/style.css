@@ -356,10 +356,29 @@ template {
     display: none;
 }
 
-p {
-    color: #ea00ff;
-    font-size: 50px;
-    font-weight: bold;
-    text-shadow: 2px 2px 5px;
-    padding: 20px 20px 0px;
+.circular-graph {
+    width: 800px;
+    height: 500px;
+    border: 1px solid #747373;
+    margin: 0 auto;
+    margin-top: 200px;
+    padding: 15px 50px 15px 30px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.svg__circle-graph {
+    position: relative;
+    stroke: #c0bebe;
+    stroke-width: 30;
+}
+
+svg__circle-white {
+    position: absolute;
+    stroke: transparent;
+    fill: white;
 }
