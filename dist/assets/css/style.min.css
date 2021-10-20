@@ -320,25 +320,118 @@ template {
 [hidden] {
   display: none; }
 
+.circular-graph .legend-block__html, .circular-graph .legend-block__css, .circular-graph .legend-block__svg {
+  font-size: 35px;
+  font-weight: 500; }
+
 .circular-graph {
-  width: 850px;
+  width: 900px;
   height: 500px;
-  border: 1px solid #747373;
   margin: 0 auto;
   margin-top: 200px;
   padding: 15px 50px 15px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center; }
-
-.svg__circle-graph {
-  position: relative;
-  stroke: #c0bebe;
-  stroke-width: 30; }
-
-.svg__circle-white {
-  position: absolute;
-  stroke: transparent;
-  fill: white; }
+  .circular-graph__legend-block {
+    width: 100px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .circular-graph .legend-block__html {
+    position: relative; }
+    .circular-graph .legend-block__html::before {
+      content: "";
+      position: absolute;
+      top: -7px;
+      left: -70px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+      background-color: violet; }
+  .circular-graph .legend-block__css {
+    position: relative; }
+    .circular-graph .legend-block__css::before {
+      content: "";
+      position: absolute;
+      top: -7px;
+      left: -70px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+      background-color: #99f1a8; }
+  .circular-graph .legend-block__svg {
+    position: relative; }
+    .circular-graph .legend-block__svg::before {
+      content: "";
+      position: absolute;
+      top: -7px;
+      left: -70px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+      background-color: #62a8eb; }
+  .circular-graph .svg__circle-graph {
+    position: relative;
+    stroke: #c0bebe;
+    stroke-width: 60;
+    fill: none; }
+  .circular-graph .svg__circle-graph-violet {
+    stroke: violet;
+    stroke-width: 60;
+    stroke-dasharray: 502 754;
+    stroke-dashoffset: 314;
+    fill: none; }
+    .circular-graph .svg__circle-graph-violet:hover {
+      cursor: pointer;
+      stroke-width: 90; }
+  .circular-graph .svg__circle-graph-green {
+    stroke: #99f1a8;
+    stroke-width: 60;
+    stroke-dasharray: 251 1005;
+    stroke-dashoffset: -188;
+    fill: none; }
+    .circular-graph .svg__circle-graph-green:hover {
+      cursor: pointer;
+      stroke-width: 90; }
+  .circular-graph .svg__circle-graph-blu {
+    stroke: #62a8eb;
+    stroke-width: 60;
+    stroke-dasharray: 377 879;
+    stroke-dashoffset: -438;
+    fill: none; }
+    .circular-graph .svg__circle-graph-blu:hover {
+      cursor: pointer;
+      stroke-width: 90; }
+  .circular-graph .svg__circle-white {
+    position: absolute;
+    stroke: none;
+    fill: white; }
+  .circular-graph .svg__circle-white-text-top {
+    fill: none;
+    stroke: #e964cc;
+    font-size: 55px;
+    font-weight: 600; }
+    .circular-graph .svg__circle-white-text-top:hover {
+      cursor: pointer;
+      stroke: black;
+      fill: gold;
+      transform: translateY(10px);
+      opacity: 0;
+      transition: 1.5s; }
+  .circular-graph .svg__circle-white-text-bottom {
+    fill: none;
+    stroke: #64a2e9;
+    font-size: 29px;
+    font-weight: 500; }
+    .circular-graph .svg__circle-white-text-bottom:hover {
+      cursor: pointer;
+      font-size: 45px;
+      stroke: black;
+      fill: gold;
+      transform: translateX(-30px);
+      opacity: 0;
+      transition: 2s; }
 
 /*# sourceMappingURL=style.min.css.map */

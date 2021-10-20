@@ -1,4 +1,10 @@
 @import "./base/normalize.scss";
 
 
+%legendBlockTitle {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+
 @import "./circular-graph";

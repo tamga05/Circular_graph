@@ -16,30 +16,40 @@
 
         <div class="circular-graph">
 
-            <svg class="circular-graph__svg svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="470px"
-            height="470px" viewBox="0 0 470 470">
+            <svg class="circular-graph__svg svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="490px"
+            height="490px" viewBox="0 0 490 490">
 
-                <title class="svg__title" >There are my knowledge about web technologies.</title>
+                <title class="svg__title">There are my knowledge about web technologies.</title>
 
-                <desc class="svg__desc" >My knowledge of HTML is 40%, of CSS is 20% and of SVG is 30%.</desc>
+                <desc class="svg__desc">My knowledge of HTML is 40%, of CSS is 20% and of SVG is 30%.</desc>
 
                 <g class=" svg__group">
-                    <circle class="svg__circle-graph" r="220" cx="235" cy="235"></circle>
 
-                    <circle class="svg__circle-white" r="205" cx="235" cy="235">
-                        <text class="svg__circle-white-text">Markup I KNOW</text>
-                    </circle>
+                    <circle class="svg__circle-graph" r="200" cx="50%" cy="50%"></circle>
+
+                    <circle class="svg__circle-graph-violet" r="200" cx="50%" cy="50%"></circle>
+
+                    <circle class="svg__circle-graph-green" r="200" cx="50%" cy="50%"></circle>
+
+                    <circle class="svg__circle-graph-blu" r="200" cx="50%" cy="50%"></circle>
+
+                    <circle class="svg__circle-white" r="170" cx="50%" cy="50%"></circle>
+
+                    <text class="svg__circle-white-text-top" x="31%" y="50%" fill="black">Markup</text>
+
+                    <text class="svg__circle-white-text-bottom" x="40%" y="60%" fill="black">I KNOW</text>
+
                 </g>
 
             </svg>
 
-            <div class="circular-graph__legend-block legend-block">
+            <div class="circular-graph__legend-block legend-block" aria-hidden="true" role="presentation">
 
-                <div class="legend-block__html">HTML</div>
+                <span class="legend-block__html">HTML</span>
 
-                <div class="legend-block__css">CSS</div>
+                <span class="legend-block__css">CSS</span>
 
-                <div class="legend-block__svg">SVG</div>
+                <span class="legend-block__svg">SVG</span>
 
             </div>
 
