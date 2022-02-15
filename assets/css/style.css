@@ -494,8 +494,8 @@ template {
     cursor: pointer;
     stroke: black;
     fill: gold;
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
     opacity: 0;
     transition: 1.5s;
 }
@@ -509,10 +509,11 @@ template {
 
 .circular-graph .svg__circle-white-text-bottom:hover {
     cursor: pointer;
+    font-size: 45px;
     stroke: black;
     fill: gold;
-    -webkit-transform: translateY(10px);
-    transform: translateY(10px);
+    -webkit-transform: translateX(-30px);
+    transform: translateX(-30px);
     opacity: 0;
-    transition: 1.5s;
+    transition: 2s;
 }
